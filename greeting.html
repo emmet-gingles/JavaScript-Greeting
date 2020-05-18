@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Greeting</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="script.js">
+		</script>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<button id="showMenu" onclick="showMenu()">Show Menu</button>
+		<p id="greeting"></p>
+		<div id="menu-border">		
+			<form id="menu" onsubmit="showGreeting()">	
+				<span id="closeBtn" onclick="closeMenu()">&times</span>
+				<label for="name">What is your name?</label>
+				<input type="text" id="name" class="menuItem"/>
+				<span id="errorMsg"></span>
+				<br/><label>What language do you speak?</label>
+				<select id="language" class="menuItem">
+					<option value="English" selected>English</option>
+					<option value="French">French</option>
+					<option value="German">German</option>
+					<option value="Italian">Italian</option>
+					<option value="Spanish">Spanish</option>
+				</select>
+				<br/><input type="submit" value="Show Greeting" class="menuItem"/>
+			</form>
+		</div>
+	</body>
+</html>
